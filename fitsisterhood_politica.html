@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSisterhood - Política de Privacidade e Termos de Uso</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background: linear-gradient(135deg, #FFF5F7 0%, #FFFFFF 100%);
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #FFB6C1 0%, #FFC0CB 100%);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(255, 182, 193, 0.15);
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #FFFFFF;
+            padding: 20px;
+            border-bottom: 1px solid #E5E7EB;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav button {
+            background: #FFB6C1;
+            color: #FFFFFF;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background: #FFA0B4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+        }
+
+        nav button.active {
+            background: #FF8FA3;
+            box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
+        }
+
+        /* Main Container */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            display: none;
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Typography */
+        h2 {
+            color: #FFB6C1;
+            font-size: 28px;
+            margin-bottom: 24px;
+            margin-top: 32px;
+            border-bottom: 3px solid #FFD6E7;
+            padding-bottom: 12px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #FF8FA3;
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #4B5563;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #4B5563;
+        }
+
+        strong {
+            color: #FF8FA3;
+            font-weight: 600;
+        }
+
+        em {
+            color: #FFB6C1;
+            font-style: italic;
+        }
+
+        /* Highlight boxes */
+        .highlight {
+            background: #FFF5F7;
+            border-left: 4px solid #FFB6C1;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .highlight strong {
+            color: #FF6B9D;
+        }
+
+        /* Links */
+        a {
+            color: #FFB6C1;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #FF8FA3;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #FFB6C1;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 32px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            nav button {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+
+            main {
+                margin: 20px auto;
+            }
+
+            .content-section {
+                padding: 24px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        /* Last updated */
+        .last-updated {
+            color: #9CA3AF;
+            font-size: 13px;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        /* Emoji support */
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💛 FitSisterhood</h1>
+        <p>Política de Privacidade e Termos de Uso</p>
+    </header>
+
+    <nav>
+        <button class="nav-btn active" data-section="privacy">Política de Privacidade</button>
+        <button class="nav-btn" data-section="terms">Termos de Uso</button>
+    </nav>
+
+    <main>
+        <!-- POLÍTICA DE PRIVACIDADE -->
+        <section id="privacy" class="content-section active">
+            <div class="last-updated">Última atualização: 13 de março de 2026</div>
+
+            <h2>Política de Privacidade - FitSisterhood</h2>
+
+            <h3>1. Introdução</h3>
+            <p>Bem-vinda ao <strong>FitSisterhood</strong>! Sua privacidade é muito importante para nós. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos suas informações pessoais quando você usa nosso aplicativo.</p>
+            <p>Ao usar o FitSisterhood, você concorda com a coleta e uso de informações de acordo com esta política.</p>
+
+            <h3>2. Informações que Coletamos</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">2.1 Informações Fornecidas por Você</h4>
+            <p>Coletamos as seguintes informações quando você usa o aplicativo:</p>
+            <ul>
+                <li><strong>Dados de Ciclo Menstrual:</strong> Data de início da menstruação, fase do ciclo, sintomas relatados</li>
+                <li><strong>Dados de Treino:</strong> Tipo de atividade física, duração, intensidade, calorias estimadas</li>
+                <li><strong>Dados Nutricionais:</strong> Refeições registradas, calorias, macronutrientes</li>
+                <li><strong>Dados de Progresso:</strong> Peso, medidas corporais, fotos de progresso (se você optar por adicionar)</li>
+                <li><strong>Preferências:</strong> Objetivos fitness (emagrecimento, ganho de massa, ambos)</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">2.2 Informações Coletadas Automaticamente</h4>
+            <ul>
+                <li><strong>Dados de Uso:</strong> Telas visitadas, funcionalidades utilizadas, tempo de uso do app</li>
+                <li><strong>Informações do Dispositivo:</strong> Modelo do dispositivo, versão do sistema operacional, identificador único do dispositivo</li>
+                <li><strong>Dados de Compra:</strong> Histórico de compras de receitas premium, Desafio 21 e assinaturas (gerenciado pelas lojas de app)</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">2.3 Informações que NÃO Coletamos</h4>
+            <ul>
+                <li><span class="emoji">❌</span><strong>Não coletamos</strong> dados de localização GPS</li>
+                <li><span class="emoji">❌</span><strong>Não coletamos</strong> contatos ou lista de amigos</li>
+                <li><span class="emoji">❌</span><strong>Não coletamos</strong> informações de outros aplicativos</li>
+                <li><span class="emoji">❌</span><strong>Não vendemos</strong> seus dados para terceiros</li>
+            </ul>
+
+            <h3>3. Como Usamos Suas Informações</h3>
+            <p>Utilizamos suas informações para:</p>
+            <ul>
+                <li><strong>Fornecer funcionalidades do app:</strong> Rastrear seu ciclo menstrual, treinos e nutrição</li>
+                <li><strong>Personalizar sua experiência:</strong> Oferecer dicas baseadas na fase do seu ciclo</li>
+                <li><strong>Melhorar o aplicativo:</strong> Analisar padrões de uso para aprimorar funcionalidades</li>
+                <li><strong>Processar compras:</strong> Gerenciar suas compras de receitas premium, Desafio 21 e assinaturas (via In-App Purchase)</li>
+                <li><strong>Enviar notificações:</strong> Lembretes de treino, hidratação e dicas motivacionais (se você permitir)</li>
+                <li><strong>Suporte ao cliente:</strong> Responder suas dúvidas e resolver problemas</li>
+            </ul>
+
+            <h3>4. Como Armazenamos Suas Informações</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">4.1 Armazenamento Local</h4>
+            <p>A maioria dos seus dados é armazenada <strong>localmente no seu dispositivo</strong> usando AsyncStorage:</p>
+            <ul>
+                <li>Dados de ciclo menstrual</li>
+                <li>Registros de treinos</li>
+                <li>Registros nutricionais</li>
+                <li>Fotos de progresso</li>
+                <li>Preferências do aplicativo</li>
+            </ul>
+            <div class="highlight">
+                <strong>Importante:</strong> Se você desinstalar o aplicativo, esses dados serão permanentemente excluídos do seu dispositivo.
+            </div>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">4.2 Armazenamento em Nuvem (Opcional)</h4>
+            <p>Se você optar por criar uma conta e sincronizar seus dados:</p>
+            <ul>
+                <li>Dados são armazenados em servidores seguros com criptografia</li>
+                <li>Você pode acessar seus dados de múltiplos dispositivos</li>
+                <li>Backups automáticos protegem contra perda de dados</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">4.3 Segurança</h4>
+            <p>Implementamos medidas de segurança técnicas e organizacionais para proteger seus dados:</p>
+            <ul>
+                <li>Criptografia de dados em trânsito (HTTPS/TLS)</li>
+                <li>Criptografia de dados em repouso</li>
+                <li>Acesso restrito a dados pessoais</li>
+                <li>Monitoramento de segurança contínuo</li>
+            </ul>
+
+            <h3>5. Compartilhamento de Informações</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">5.1 NÃO Compartilhamos Seus Dados Com:</h4>
+            <ul>
+                <li><span class="emoji">❌</span> Empresas de publicidade</li>
+                <li><span class="emoji">❌</span> Corretores de dados</li>
+                <li><span class="emoji">❌</span> Redes sociais (exceto se você escolher compartilhar)</li>
+                <li><span class="emoji">❌</span> Seguradoras de saúde</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">5.2 Compartilhamento Limitado:</h4>
+            <p>Podemos compartilhar informações apenas nas seguintes situações:</p>
+            <ul>
+                <li><strong>Lojas de App (Apple App Store e Google Play):</strong> Para processar compras via In-App Purchase (as lojas gerenciam pagamentos)</li>
+                <li><strong>Provedores de Serviço:</strong> Empresas que nos ajudam a operar o aplicativo (hospedagem, analytics) sob acordos de confidencialidade</li>
+                <li><strong>Requisitos Legais:</strong> Se exigido por lei, ordem judicial ou autoridades governamentais</li>
+                <li><strong>Proteção de Direitos:</strong> Para proteger nossos direitos legais ou prevenir fraudes</li>
+            </ul>
+
+            <h3>6. Seus Direitos (LGPD - Lei Geral de Proteção de Dados)</h3>
+            <p>Como usuária brasileira, você tem os seguintes direitos:</p>
+            <ul>
+                <li><strong>Acesso:</strong> Solicitar cópia de todos os seus dados</li>
+                <li><strong>Correção:</strong> Corrigir dados incorretos ou incompletos</li>
+                <li><strong>Exclusão:</strong> Solicitar exclusão permanente de seus dados</li>
+                <li><strong>Portabilidade:</strong> Exportar seus dados em formato legível</li>
+                <li><strong>Revogação de Consentimento:</strong> Retirar consentimento para processamento de dados</li>
+                <li><strong>Oposição:</strong> Opor-se ao processamento de seus dados em certas situações</li>
+            </ul>
+            <p>Para exercer seus direitos, entre em contato: <strong>privacidade@fitsisterhood.com</strong></p>
+
+            <h3>7. Dados Sensíveis de Saúde</h3>
+            <p>O FitSisterhood coleta <strong>dados sensíveis de saúde</strong> (ciclo menstrual, peso, medidas corporais).</p>
+            <p><strong>Base Legal (LGPD):</strong> Consentimento explícito (Art. 11, II, alínea "a")</p>
+            <p>Ao usar o aplicativo e registrar esses dados, você consente com:</p>
+            <ul>
+                <li>Coleta e armazenamento de dados de saúde</li>
+                <li>Uso desses dados para fornecer funcionalidades do app</li>
+                <li>Processamento local no seu dispositivo</li>
+            </ul>
+            <div class="highlight">
+                <strong>Você pode revogar este consentimento a qualquer momento</strong> excluindo sua conta ou desinstalando o aplicativo.
+            </div>
+
+            <h3>8. Menores de Idade</h3>
+            <p>O FitSisterhood é destinado a usuárias com <strong>18 anos ou mais</strong>. Não coletamos intencionalmente informações de menores de 18 anos. Se você é responsável por um menor que forneceu dados ao aplicativo, entre em contato conosco para exclusão.</p>
+
+            <h3>9. Cookies e Tecnologias de Rastreamento</h3>
+            <p>O aplicativo móvel <strong>não usa cookies</strong>. Usamos tecnologias similares apenas para:</p>
+            <ul>
+                <li>Manter você logada no aplicativo</li>
+                <li>Lembrar suas preferências</li>
+                <li>Analisar uso do app (analytics anônimos)</li>
+            </ul>
+            <p>Você pode desativar analytics nas Configurações do aplicativo.</p>
+
+            <h3>10. Notificações Push</h3>
+            <p>Se você permitir notificações push, podemos enviar:</p>
+            <ul>
+                <li>Lembretes de treino</li>
+                <li>Lembretes de hidratação</li>
+                <li>Dicas baseadas na fase do seu ciclo</li>
+                <li>Atualizações importantes do aplicativo</li>
+            </ul>
+            <p>Você pode desativar notificações a qualquer momento nas Configurações do seu dispositivo.</p>
+
+            <h3>11. Compras e Pagamentos</h3>
+            <p>O FitSisterhood oferece as seguintes modalidades de compra, todas processadas pelas <strong>lojas de app (Apple App Store ou Google Play)</strong> através do sistema In-App Purchase:</p>
+            <ul>
+                <li><strong>Receitas Fitness Premium:</strong> Compra avulsa de pacotes de receitas saudáveis e fitness</li>
+                <li><strong>Desafio 21:</strong> Compra única do programa de 21 dias de treino e nutrição</li>
+                <li><strong>Assinatura:</strong> Plano recorrente (mensal ou anual) com acesso a conteúdo exclusivo, funcionalidades premium e atualizações contínuas</li>
+            </ul>
+            <p>Em relação ao processamento de pagamentos:</p>
+            <ul>
+                <li><strong>Não armazenamos</strong> informações de cartão de crédito</li>
+                <li><strong>Não processamos</strong> pagamentos diretamente</li>
+                <li><strong>As lojas de app gerenciam</strong> todas as transações financeiras</li>
+                <li><strong>Dados de assinatura</strong> (status ativo/cancelado, data de renovação) são gerenciados pelas lojas de app e compartilhados conosco apenas para liberar o acesso ao conteúdo</li>
+            </ul>
+            <p>Para questões sobre pagamentos, consulte as políticas de privacidade das lojas de app: <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple App Store</a> e <a href="https://policies.google.com/privacy" target="_blank">Google Play</a></p>
+
+            <h3>12. Transferência Internacional de Dados</h3>
+            <p>Seus dados podem ser transferidos e armazenados em servidores localizados fora do Brasil. Garantimos que:</p>
+            <ul>
+                <li>Provedores de serviço seguem padrões de proteção de dados equivalentes à LGPD</li>
+                <li>Dados são protegidos por criptografia durante transferência</li>
+                <li>Contratos de processamento de dados estão em vigor</li>
+            </ul>
+
+            <h3>13. Retenção de Dados</h3>
+            <p>Mantemos seus dados pelo tempo necessário para fornecer o serviço:</p>
+            <ul>
+                <li><strong>Dados de uso ativo:</strong> Enquanto você usar o aplicativo</li>
+                <li><strong>Dados de conta:</strong> Até você solicitar exclusão</li>
+                <li><strong>Dados de compra:</strong> Conforme exigido por lei (geralmente 5 anos para fins fiscais)</li>
+                <li><strong>Dados analíticos:</strong> Dados anônimos podem ser mantidos indefinidamente</li>
+            </ul>
+
+            <h3>14. Alterações nesta Política</h3>
+            <p>Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre mudanças significativas através de:</p>
+            <ul>
+                <li>Notificação no aplicativo</li>
+                <li>E-mail (se você forneceu)</li>
+                <li>Aviso na tela inicial</li>
+            </ul>
+
+            <h3>15. Contato</h3>
+            <p>Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos seus dados, entre em contato:</p>
+            <p><strong>E-mail:</strong> privacidade@fitsisterhood.com</p>
+
+            <h3>16. Autoridade de Proteção de Dados</h3>
+            <p>Você tem o direito de apresentar uma reclamação à Autoridade Nacional de Proteção de Dados (ANPD):</p>
+            <p><strong>ANPD - Autoridade Nacional de Proteção de Dados</strong><br>
+            Website: <a href="https://www.gov.br/anpd/pt-br" target="_blank">https://www.gov.br/anpd/pt-br</a><br>
+            E-mail: anpd@anpd.gov.br</p>
+
+            <h3>17. Consentimento</h3>
+            <p>Ao usar o FitSisterhood, você confirma que:</p>
+            <ul>
+                <li><span class="emoji">✅</span> Leu e compreendeu esta Política de Privacidade</li>
+                <li><span class="emoji">✅</span> Concorda com a coleta e uso de suas informações conforme descrito</li>
+                <li><span class="emoji">✅</span> Consente com o processamento de dados sensíveis de saúde</li>
+                <li><span class="emoji">✅</span> Tem 18 anos ou mais</li>
+            </ul>
+            <p>Se você não concorda com esta política, por favor, não use o aplicativo.</p>
+        </section>
+
+        <!-- TERMOS DE USO -->
+        <section id="terms" class="content-section">
+            <div class="last-updated">Última atualização: 13 de março de 2026</div>
+
+            <h2>Termos de Uso - FitSisterhood</h2>
+
+            <h3>1. Aceitação dos Termos</h3>
+            <p>Bem-vinda ao <strong>FitSisterhood</strong>! Ao acessar e usar este aplicativo, você concorda em cumprir e estar vinculada a estes Termos de Uso. Se você não concorda com qualquer parte destes termos, não use o aplicativo.</p>
+
+            <h3>2. Descrição do Serviço</h3>
+            <p>O FitSisterhood é um aplicativo móvel de saúde e bem-estar que oferece:</p>
+            <ul>
+                <li>Rastreamento de ciclo menstrual</li>
+                <li>Registro de treinos e atividades físicas</li>
+                <li>Acompanhamento nutricional</li>
+                <li>Dicas educativas sobre fitness e alimentação</li>
+                <li>Planos de treino sugeridos</li>
+                <li>Guia nutricional com dicas anti-inflamatórias e para TPM</li>
+                <li>Receitas fitness premium (compra avulsa)</li>
+                <li><strong>Desafio 21</strong> — programa intensivo de 21 dias de treino e nutrição (compra única)</li>
+                <li><strong>Assinatura</strong> — plano recorrente com acesso a conteúdo exclusivo e funcionalidades premium</li>
+                <li>Comunidade de apoio entre usuárias</li>
+                <li>Acompanhamento de progresso e evolução</li>
+            </ul>
+
+            <h3>3. ⚠️ DISCLAIMERS IMPORTANTES - LEIA COM ATENÇÃO</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">3.1 Não Somos Profissionais de Saúde</h4>
+            <p><strong>O FitSisterhood NÃO substitui orientação médica, nutricional ou de educação física profissional.</strong></p>
+            <ul>
+                <li><span class="emoji">❌</span> <strong>Não somos médicos, nutricionistas ou personal trainers</strong></li>
+                <li><span class="emoji">❌</span> <strong>Não fornecemos diagnósticos, tratamentos ou prescrições</strong></li>
+                <li><span class="emoji">❌</span> <strong>Não oferecemos aconselhamento médico personalizado</strong></li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">3.2 Conteúdo Educativo</h4>
+            <p>Todo o conteúdo fornecido no aplicativo (dicas, planos de treino, guias nutricionais, receitas) é:</p>
+            <ul>
+                <li><span class="emoji">✅</span> <strong>Educativo e informativo</strong></li>
+                <li><span class="emoji">✅</span> <strong>Baseado em informações gerais de saúde e fitness</strong></li>
+                <li><span class="emoji">✅</span> <strong>Não personalizado para sua condição médica específica</strong></li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">3.3 Consulte Profissionais</h4>
+            <p><strong>ANTES de iniciar qualquer programa de exercícios ou mudança alimentar:</strong></p>
+            <ul>
+                <li><span class="emoji">👨‍⚕️</span> <strong>Consulte um médico</strong> - Especialmente se você tem condições de saúde pré-existentes</li>
+                <li><span class="emoji">🥗</span> <strong>Consulte um nutricionista</strong> - Para um plano alimentar personalizado</li>
+                <li><span class="emoji">💪</span> <strong>Consulte um educador físico</strong> - Para orientação sobre técnicas e intensidade de treino</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">3.4 Limitação de Responsabilidade por Saúde</h4>
+            <p><strong>Você assume total responsabilidade por:</strong></p>
+            <ul>
+                <li>Sua decisão de seguir qualquer dica, plano ou receita do aplicativo</li>
+                <li>Qualquer lesão, desconforto ou problema de saúde resultante do uso do aplicativo</li>
+                <li>Adaptações necessárias aos exercícios sugeridos conforme seu nível físico</li>
+                <li>Verificação de alergias e restrições alimentares nas receitas</li>
+            </ul>
+            <p><strong>O FitSisterhood não se responsabiliza por:</strong></p>
+            <ul>
+                <li>Lesões decorrentes de exercícios físicos</li>
+                <li>Reações alérgicas a alimentos sugeridos</li>
+                <li>Complicações de saúde relacionadas a mudanças na dieta ou treino</li>
+                <li>Resultados não alcançados ou expectativas não atendidas</li>
+            </ul>
+
+            <h3>4. Rastreamento de Ciclo Menstrual</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">4.1 Precisão das Previsões</h4>
+            <ul>
+                <li>As previsões de fases do ciclo são <strong>estimativas baseadas em dados que você fornece</strong></li>
+                <li><strong>Não são métodos contraceptivos</strong> e não devem ser usados para prevenir gravidez</li>
+                <li>Ciclos menstruais variam naturalmente e previsões podem não ser precisas</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">4.2 Quando Procurar um Médico</h4>
+            <p>Consulte um ginecologista se você experienciar:</p>
+            <ul>
+                <li>Ciclos irregulares persistentes</li>
+                <li>Dor intensa ou anormal</li>
+                <li>Sangramento excessivo ou prolongado</li>
+                <li>Ausência de menstruação (amenorreia)</li>
+                <li>Sintomas graves de TPM ou PMDD</li>
+            </ul>
+
+            <h3>5. Elegibilidade</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">5.1 Idade Mínima</h4>
+            <p>Você deve ter <strong>18 anos ou mais</strong> para usar o FitSisterhood. Se você tem menos de 18 anos, não use este aplicativo.</p>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">5.2 Condições de Saúde</h4>
+            <p><strong>NÃO use este aplicativo sem consultar um médico se você:</strong></p>
+            <ul>
+                <li>Está grávida ou amamentando</li>
+                <li>Tem histórico de distúrbios alimentares</li>
+                <li>Tem condições cardíacas ou respiratórias</li>
+                <li>Está se recuperando de cirurgia ou lesão</li>
+                <li>Tem diabetes ou outras condições metabólicas</li>
+                <li>Toma medicamentos que afetam exercício ou dieta</li>
+            </ul>
+
+            <h3>6. Conta de Usuária</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">6.1 Criação de Conta (Opcional)</h4>
+            <ul>
+                <li>Você pode usar o aplicativo sem criar conta (dados armazenados localmente)</li>
+                <li>Para sincronização entre dispositivos, é necessário criar conta</li>
+                <li>Você é responsável por manter a confidencialidade de sua senha</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">6.2 Informações Precisas</h4>
+            <ul>
+                <li>Você concorda em fornecer informações precisas e atualizadas</li>
+                <li>Informações imprecisas podem afetar a qualidade das dicas personalizadas</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">6.3 Segurança da Conta</h4>
+            <ul>
+                <li>Você é responsável por todas as atividades em sua conta</li>
+                <li>Notifique-nos imediatamente se suspeitar de acesso não autorizado</li>
+            </ul>
+
+            <h3>7. Compras, Assinatura e Conteúdo Premium</h3>
+            <p>O FitSisterhood oferece três modalidades de conteúdo pago, todas processadas via <strong>In-App Purchase (Apple App Store ou Google Play)</strong>. Preços são exibidos em reais (R$) e podem variar conforme a loja e a região.</p>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">7.1 Receitas Fitness Premium</h4>
+            <ul>
+                <li>Compra avulsa de pacotes de receitas saudáveis e fitness</li>
+                <li>Após a compra, o conteúdo fica permanentemente disponível na sua conta</li>
+                <li>Geralmente, <strong>conteúdo digital não é reembolsável</strong> após download</li>
+                <li><strong>Verifique todos os ingredientes</strong> antes de preparar qualquer receita — não nos responsabilizamos por reações alérgicas</li>
+                <li>Adapte receitas conforme suas necessidades e restrições alimentares</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">7.2 Desafio 21</h4>
+            <ul>
+                <li>Compra única que dá acesso ao programa completo de 21 dias de treino e nutrição</li>
+                <li>Após a compra, o acesso ao Desafio 21 é permanente e não expira</li>
+                <li>O conteúdo do Desafio 21 é de uso pessoal e intransferível</li>
+                <li>Não garantimos resultados específicos de fitness ou perda de peso ao seguir o programa</li>
+                <li>Reembolsos seguem a política da loja de app (Apple App Store ou Google Play)</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">7.3 Assinatura</h4>
+            <ul>
+                <li>Plano recorrente (mensal ou anual) com acesso a conteúdo exclusivo, funcionalidades premium e atualizações contínuas</li>
+                <li>A assinatura é renovada automaticamente ao final de cada período, salvo cancelamento prévio</li>
+                <li>Você pode <strong>cancelar a assinatura a qualquer momento</strong> diretamente nas configurações da loja de app (Apple App Store ou Google Play)</li>
+                <li>O cancelamento entra em vigor ao final do período já pago — não há reembolso proporcional pelo período restante, salvo política específica da loja</li>
+                <li>Podemos alterar o preço da assinatura com aviso prévio de pelo menos 30 dias antes da renovação</li>
+                <li>O acesso ao conteúdo premium é interrompido imediatamente após o encerramento da assinatura</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">7.4 Política de Reembolso Geral</h4>
+            <ul>
+                <li>Reembolsos de todas as modalidades seguem a política da loja de app (Apple App Store ou Google Play)</li>
+                <li>Para solicitar reembolso, entre em contato diretamente com o suporte da loja de app</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">7.5 Restauração de Compras</h4>
+            <ul>
+                <li>Você pode restaurar compras anteriores (receitas e Desafio 21) em novos dispositivos</li>
+                <li>Use o botão "Restaurar Compras" nas Configurações do app</li>
+                <li>Assinaturas ativas são restauradas automaticamente ao fazer login com a mesma conta da loja de app</li>
+            </ul>
+
+            <h3>8. Propriedade Intelectual</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">8.1 Direitos Autorais</h4>
+            <p>Todo o conteúdo do FitSisterhood (textos, imagens, receitas, planos de treino, design) é protegido por direitos autorais e pertence ao FitSisterhood ou seus licenciadores.</p>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">8.2 Uso Permitido</h4>
+            <p>Você pode:</p>
+            <ul>
+                <li><span class="emoji">✅</span> Usar o conteúdo para uso pessoal e não comercial</li>
+                <li><span class="emoji">✅</span> Compartilhar seu progresso nas redes sociais (com créditos)</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">8.3 Uso Proibido</h4>
+            <p>Você NÃO pode:</p>
+            <ul>
+                <li><span class="emoji">❌</span> Copiar, reproduzir ou distribuir conteúdo do app</li>
+                <li><span class="emoji">❌</span> Revender ou comercializar receitas, planos de treino ou conteúdo do Desafio 21</li>
+                <li><span class="emoji">❌</span> Compartilhar credenciais de assinatura com outras pessoas</li>
+                <li><span class="emoji">❌</span> Fazer engenharia reversa do aplicativo</li>
+                <li><span class="emoji">❌</span> Remover marcas d'água ou créditos</li>
+            </ul>
+
+            <h3>9. Conduta do Usuário</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">9.1 Uso Aceitável</h4>
+            <p>Você concorda em:</p>
+            <ul>
+                <li>Usar o aplicativo de forma legal e ética</li>
+                <li>Respeitar outras usuárias na comunidade</li>
+                <li>Não compartilhar conteúdo ofensivo, discriminatório ou ilegal</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">9.2 Proibições</h4>
+            <p>É proibido:</p>
+            <ul>
+                <li>Assediar, intimidar ou ameaçar outras usuárias</li>
+                <li>Compartilhar conteúdo sexual explícito</li>
+                <li>Promover distúrbios alimentares ou comportamentos prejudiciais à saúde</li>
+                <li>Fazer spam ou publicidade não autorizada</li>
+                <li>Violar direitos de privacidade de outras usuárias</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">9.3 Consequências</h4>
+            <p>Violações podem resultar em:</p>
+            <ul>
+                <li>Remoção de conteúdo</li>
+                <li>Suspensão temporária da conta</li>
+                <li>Banimento permanente</li>
+                <li>Ação legal, se aplicável</li>
+            </ul>
+
+            <h3>10. Comunidade</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">10.1 Conteúdo Gerado por Usuárias</h4>
+            <ul>
+                <li>Você mantém propriedade do conteúdo que publica (fotos, posts, comentários)</li>
+                <li>Ao publicar, você nos concede licença para exibir esse conteúdo no aplicativo</li>
+                <li>Você é responsável pelo conteúdo que publica</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">10.2 Moderação</h4>
+            <ul>
+                <li>Reservamos o direito de moderar e remover conteúdo inapropriado</li>
+                <li>Não somos responsáveis por conteúdo gerado por usuárias</li>
+                <li>Denuncie conteúdo inapropriado usando a função de reporte</li>
+            </ul>
+
+            <h3>11. Privacidade e Dados</h3>
+            <p>O uso de suas informações pessoais é regido por nossa <strong>Política de Privacidade</strong>, que faz parte integrante destes Termos de Uso.</p>
+
+            <h3>12. Disponibilidade do Serviço</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">12.1 Manutenção</h4>
+            <ul>
+                <li>O aplicativo pode ficar indisponível temporariamente para manutenção</li>
+                <li>Faremos o possível para minimizar interrupções</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">12.2 Modificações</h4>
+            <p>Reservamos o direito de:</p>
+            <ul>
+                <li>Modificar ou descontinuar funcionalidades</li>
+                <li>Atualizar o aplicativo com novos recursos</li>
+                <li>Alterar preços de conteúdo premium, Desafio 21 e assinatura (com aviso prévio de pelo menos 30 dias para assinaturas)</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">12.3 Sem Garantia de Disponibilidade</h4>
+            <ul>
+                <li>Não garantimos que o aplicativo estará sempre disponível</li>
+                <li>Não somos responsáveis por interrupções de serviço</li>
+            </ul>
+
+            <h3>13. Limitação de Responsabilidade</h3>
+            <p><strong>NA MÁXIMA EXTENSÃO PERMITIDA POR LEI:</strong></p>
+            <p>O FitSisterhood é fornecido "<strong>COMO ESTÁ</strong>" e "<strong>CONFORME DISPONÍVEL</strong>", sem garantias de qualquer tipo.</p>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">13.1 Não Garantimos:</h4>
+            <ul>
+                <li>Resultados específicos de fitness ou perda de peso</li>
+                <li>Precisão absoluta de informações nutricionais</li>
+                <li>Funcionamento ininterrupto do aplicativo</li>
+                <li>Ausência de erros ou bugs</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">13.2 Não Somos Responsáveis Por:</h4>
+            <ul>
+                <li>Danos diretos, indiretos, incidentais ou consequenciais</li>
+                <li>Perda de dados devido a falhas técnicas</li>
+                <li>Lesões ou problemas de saúde resultantes do uso do app</li>
+                <li>Decisões tomadas com base em informações do aplicativo</li>
+            </ul>
+
+            <h3>14. Indenização</h3>
+            <p>Você concorda em indenizar e isentar o FitSisterhood, seus desenvolvedores, funcionários e parceiros de quaisquer reivindicações, danos ou despesas (incluindo honorários advocatícios) resultantes de:</p>
+            <ul>
+                <li>Seu uso do aplicativo</li>
+                <li>Violação destes Termos de Uso</li>
+                <li>Violação de direitos de terceiros</li>
+                <li>Conteúdo que você publica no aplicativo</li>
+            </ul>
+
+            <h3>15. Lei Aplicável e Jurisdição</h3>
+            <p>Estes Termos de Uso são regidos pelas leis do <strong>Brasil</strong>.</p>
+            <p>Qualquer disputa será resolvida nos tribunais competentes, renunciando a qualquer outro foro.</p>
+
+            <h3>16. Alterações nos Termos</h3>
+            <p>Podemos modificar estes Termos de Uso a qualquer momento. Notificaremos você sobre mudanças significativas através de:</p>
+            <ul>
+                <li>Notificação no aplicativo</li>
+                <li>E-mail (se fornecido)</li>
+                <li>Aviso na tela inicial</li>
+            </ul>
+            <p>O uso continuado do aplicativo após alterações constitui aceitação dos novos termos.</p>
+
+            <h3>17. Rescisão</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">17.1 Por Você</h4>
+            <p>Você pode parar de usar o aplicativo a qualquer momento:</p>
+            <ul>
+                <li>Desinstalando o aplicativo</li>
+                <li>Excluindo sua conta (se criou uma)</li>
+                <li>Cancelando sua assinatura diretamente nas configurações da loja de app (Apple App Store ou Google Play) — o cancelamento entra em vigor ao final do período já pago</li>
+            </ul>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">17.2 Por Nós</h4>
+            <p>Podemos suspender ou encerrar seu acesso se:</p>
+            <ul>
+                <li>Você violar estes Termos de Uso</li>
+                <li>Detectarmos atividade fraudulenta</li>
+                <li>For necessário por motivos legais</li>
+            </ul>
+
+            <h3>18. Disposições Gerais</h3>
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">18.1 Acordo Integral</h4>
+            <p>Estes Termos de Uso e a Política de Privacidade constituem o acordo integral entre você e o FitSisterhood.</p>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">18.2 Divisibilidade</h4>
+            <p>Se qualquer disposição destes termos for considerada inválida, as demais permanecem em vigor.</p>
+
+            <h4 style="color: #FF8FA3; font-size: 16px; margin-top: 16px;">18.3 Renúncia</h4>
+            <p>A falha em fazer cumprir qualquer direito não constitui renúncia a esse direito.</p>
+
+            <h3>19. Contato</h3>
+            <p>Se você tiver dúvidas sobre estes Termos de Uso, entre em contato:</p>
+            <p><strong>E-mail:</strong> suporte@fitsisterhood.com</p>
+
+            <h3>20. Reconhecimento e Consentimento</h3>
+            <p><strong>Ao usar o FitSisterhood, você reconhece que:</strong></p>
+            <ul>
+                <li><span class="emoji">✅</span> Leu e compreendeu estes Termos de Uso</li>
+                <li><span class="emoji">✅</span> Concorda em cumprir todos os termos e condições</li>
+                <li><span class="emoji">✅</span> Entende que o aplicativo não substitui orientação médica profissional</li>
+                <li><span class="emoji">✅</span> Assume responsabilidade por sua saúde e bem-estar ao usar o aplicativo</li>
+                <li><span class="emoji">✅</span> Consultará profissionais de saúde antes de iniciar novos programas de exercício ou dieta</li>
+                <li><span class="emoji">✅</span> Compreende as condições de compra do Desafio 21, assinatura e receitas premium, incluindo a política de reembolso e cancelamento</li>
+                <li><span class="emoji">✅</span> Tem 18 anos ou mais</li>
+            </ul>
+            <div class="highlight">
+                <strong>Se você não concorda com estes termos, por favor, não use o aplicativo.</strong>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>FitSisterhood</strong> - Empoderando mulheres através do fitness e bem-estar 💪💛</p>
+        <p>Esta Política de Privacidade e Termos de Uso estão em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e com as diretrizes das lojas de app (Apple App Store e Google Play) para aplicativos de saúde e fitness, incluindo as regras de In-App Purchase para assinaturas recorrentes.</p>
+    </footer>
+
+    <script>
+        // Navigation functionality
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons and sections
+                document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding section
+                this.classList.add('active');
+                const sectionId = this.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
+
+                // Scroll to top
+                window.scrollTo(0, 0);
+            });
+        });
+    </script>
+</body>
+</html>
